@@ -2,26 +2,24 @@
 
 authentication api for Mock Banking API
 
-- [Getting Started](#getting-started) – Running the app for development
+- [Getting Started](#getting-started)
 
 ## Getting Started
 
-To get started developing on your local make sure you have `nodejs`, and install `typescript`:
+Install `nodejs` and `typescript`:
 
 ```
 npm install -g typescript
 ```
 
-then run:
+Run for `development` (`http://localhost:3000`)
 
 ```
 npm install
 npm run watch
 ```
 
-For development API runs here: `http://localhost:3000`
-
-To run in a 'production' environment:
+Run for `production`
 
 ```
 npm run build

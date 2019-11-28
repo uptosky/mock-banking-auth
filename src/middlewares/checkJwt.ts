@@ -33,12 +33,7 @@ export default (req: Request, res: Response, next: NextFunction) => {
   const jwtObj: any = jwtDecode(jwtRaw);
 
   if (process.env.NODE_ENV === 'test') {
-    if (
-      jwtRaw === constants.TEST_JWT ||
-      jwtRaw === constants.TEST_JWT_NOT_ADMIN_WITH_USER_PRIVILEGES ||
-      jwtRaw === constants.TEST_JWT_ACCOUNT_DISABLED ||
-      jwtRaw === constants.TEST_JWT_SYSTEM_ADMIN
-    ) {
+    if (jwtRaw === constants.TEST_JWT) {
       next();
       return;
     }
